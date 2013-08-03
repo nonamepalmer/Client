@@ -13,5 +13,13 @@ public class MainActivity extends Activity
 	{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+		final Button mybutton=(Button) findViewById(R.id.button);
+		mybutton.setOnClickListener(new View.OnClickListener(){
+			@Override
+			
+			public void onClick (View v){
+				mybutton.setText("Das ist mein erster Test");
+			}
+		});
     }
 }
